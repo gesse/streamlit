@@ -1,0 +1,11 @@
+version: '3'
+services:
+  streamlit-app:
+    image: python:3.9-slim
+    container_name: streamlit-container
+    ports:
+      - "80:8501"
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    command: sh -c "pip install --upgrade pip && pip install -r requirements.txt && streamlit run app.py"
