@@ -1,0 +1,36 @@
+2023-12-26 19:50:31,227:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-26 19:50:31,227:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-26 19:50:31,227:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-26 19:50:31,227:WARNING:
+'cuml' is a soft dependency and not included in the pycaret installation. Please run: `pip install cuml` to install.
+2023-12-26 19:50:32,514:INFO:Initializing load_model()
+2023-12-26 19:50:32,514:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:51:11,573:INFO:Initializing load_model()
+2023-12-26 19:51:11,573:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:51:15,709:INFO:Initializing load_model()
+2023-12-26 19:51:15,709:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:53:11,201:INFO:Initializing load_model()
+2023-12-26 19:53:11,201:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:53:13,912:INFO:Initializing load_model()
+2023-12-26 19:53:13,912:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:53:17,181:INFO:Initializing load_model()
+2023-12-26 19:53:17,181:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:55:13,121:INFO:Initializing load_model()
+2023-12-26 19:55:13,121:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 19:55:17,682:INFO:Initializing load_model()
+2023-12-26 19:55:17,682:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 21:13:42,639:INFO:Initializing load_model()
+2023-12-26 21:13:42,640:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 21:13:46,815:INFO:Initializing load_model()
+2023-12-26 21:13:46,815:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 21:13:58,397:INFO:Initializing load_model()
+2023-12-26 21:13:58,397:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 21:14:27,157:INFO:Initializing load_model()
+2023-12-26 21:14:27,157:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 21:15:01,722:INFO:Initializing load_model()
+2023-12-26 21:15:01,722:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
+2023-12-26 21:17:12,978:INFO:Initializing load_model()
+2023-12-26 21:17:12,978:INFO:load_model(model_name=recursos/modelo-previsao-preco-diamante, platform=None, authentication=None, verbose=True)
