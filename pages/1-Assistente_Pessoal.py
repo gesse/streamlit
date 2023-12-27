@@ -2,12 +2,10 @@ import pytz
 import datetime
 import streamlit as st
 import pandas as pd
-import numpy as np
-from reportlab.pdfgen import canvas
-from reportlab.lib.pagesizes import letter, landscape, A4
+from reportlab.lib.pagesizes import landscape, A4
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
-from reportlab.platypus import Table, TableStyle, SimpleDocTemplate, Paragraph
+from reportlab.platypus import TableStyle, SimpleDocTemplate, Paragraph
 import reportlab.platypus as rlplt
 from reportlab.lib.units import mm
 from io import BytesIO
@@ -190,7 +188,7 @@ def criar_pdf(mensagens_chat):
     top_margin = 5 * mm
     bottom_margin = 5 * mm
 
-    doc = SimpleDocTemplate(buffer, pagesize=(landscape(A4)),
+    doc = SimpleDocTemplate(buffer, pagesize=(A4),
                         leftMargin=left_margin, rightMargin=right_margin,
                         topMargin=top_margin, bottomMargin=bottom_margin)
     
