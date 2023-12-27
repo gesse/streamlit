@@ -193,6 +193,9 @@ def criar_pdf(mensagens_chat):
     doc = SimpleDocTemplate(buffer, pagesize=(landscape(A4)),
                         leftMargin=left_margin, rightMargin=right_margin,
                         topMargin=top_margin, bottomMargin=bottom_margin)
+    
+        
+    doc.title = "Histórico da conversa"
 
     # Criar a tabela
     tabela_dados = []
