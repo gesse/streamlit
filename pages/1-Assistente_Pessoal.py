@@ -193,11 +193,11 @@ def criar_pdf(mensagens_chat):
     doc = SimpleDocTemplate(buffer, pagesize=(landscape(A4)),
                         leftMargin=left_margin, rightMargin=right_margin,
                         topMargin=top_margin, bottomMargin=bottom_margin)
-    
-    doc.title = "Histórico da conversa"
 
     # Criar a tabela
     tabela_dados = []
+    linha_tabela = [Paragraph("USUÁRIO"), Paragraph("MENSAGEM")]
+    tabela_dados.append(linha_tabela)
 
     for msg in mensagens_chat:
 
@@ -208,7 +208,7 @@ def criar_pdf(mensagens_chat):
         tabela_dados.append(linha_tabela)
     
     # Crie a tabela com os dados
-    tabela = rlplt.Table(tabela_dados, colWidths=(15*mm, 40*mm), splitInRow=1)
+    tabela = rlplt.Table(tabela_dados, colWidths=(30*mm, 150*mm), splitInRow=1)
 
     # Estilo da tabela
     estilo_tabela = TableStyle([
@@ -216,16 +216,19 @@ def criar_pdf(mensagens_chat):
         ('TEXTCOLOR', (0, 0), (-1, 0), colors.whitesmoke),
         ('ALIGN', (0, 0), (-1, -1), 'LEFT'),
         ('INNERGRID', (0, 0), (-1, -1), 0.25, colors.black),
-        ('BOX', (0, 0), (-1, -1), 0.25, colors.black),
+        ('BOX', (0, 0), (-1, -1), 0.25, colors.black)
     ])
 
-    # Criar a instância da tabela
-    tabela = Table(tabela_dados)
+    #Incluindo título no documento
+    styles = getSampleStyleSheet()
+    estilo_titulo = styles["Title"]
+
+    titulo = Paragraph("Histórico da conversa", estilo_titulo)
 
     # Aplicar o estilo à tabela
     tabela.setStyle(estilo_tabela)
 
-    doc.build([tabela])
+    doc.build([titulo, tabela])
 
     # Move o ponteiro de leitura/escrita para o início do buffer
     buffer.seek(0)
