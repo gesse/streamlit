@@ -80,21 +80,29 @@ def finalizar_conversa():
     st.markdown(download_arquivo(pdf_buffer, 'hist_conversa.pdf', 'Download Histórico da Conversa'), unsafe_allow_html=True)
 
     
-btn_finalizar_conversa = st.sidebar.button(
-    label="Finalizar conversa",
-    on_click=finalizar_conversa
-)
+# btn_finalizar_conversa = st.sidebar.button(
+#     label="Finalizar conversa",
+#     on_click=finalizar_conversa
+# )
 
 # Função para ler o conteúdo de um arquivo de texto (.txt)
 def ler_arquivo_texto(arquivo_txt):
     with open(arquivo_txt, 'r', encoding='utf-8') as arquivo:
         conteudo = arquivo.read()
     return conteudo
-    
-if not btn_finalizar_conversa:
 
-    # Área para fazer upload do arquivo PDF
-    arquivo_txt = st.file_uploader("Faça o upload do arquivo text:", type=["txt"])
+btn_finalizar_conversa = None
+
+# Área para fazer upload do arquivo PDF
+arquivo_txt = st.file_uploader("Faça o upload do arquivo text:", type=["txt"])
+
+if arquivo_txt:
+    btn_finalizar_conversa = st.sidebar.button(
+        label="Finalizar conversa",
+        on_click=finalizar_conversa
+    )
+
+if not btn_finalizar_conversa:
 
     if arquivo_txt: 
         # inicializando a variável
